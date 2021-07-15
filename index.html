@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Splide -->
+    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+
+    <title>LUDO</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top ">
+        <div class="relative w-100">
+            <div class="container container-fluid my-1 my-md-2">
+                <div class="w-100 d-flex flex-row justify-content-between">
+                    <div class="col-3 col-lg-2">
+                        <a href="#"><img src="/assets/img/kemenkeu.png" class="img-fluid"></a>
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <a href="#"><img src="/assets/img/logo.png" class="img-fluid"></a>
+                    </div>
+                    <div class="col-3 col-lg-2 d-flex justify-content-end align-content-center">
+                        <button class="btn btn-outline-dark" id="hamburger">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="menu" class="bg-dark" style="right:-100%; opacity:0">
+                <ul>
+                    <li style="opacity: 0; transform: translate(0px, -50px);">
+                        <a href="#">Ticket To The Show</a>
+                    </li>
+                    <li style="opacity: 0; transform: translate(0px, -50px);">
+                        <a href="#">Rangkaian Acara</a>
+                    </li style="opacity: 0; transform: translate(0px, -50px);">
+                    <li class="" style="opacity: 0; transform: translate(0px, -50px);">
+                        <a href="#">Para Mentor</a>
+                    </li>
+                    <li class="disable" style="opacity: 0; transform: translate(0px, -50px);">
+                        <a href="#">Para Kandidat</a>
+                    </li>
+                    <li class="disable" style="opacity: 0; transform: translate(0px, -50px);">
+                        <a href="#">Pemenang 2021</a>
+                    </li>
+                    <li id="submit_proposal" style="opacity: 0; transform: translate(0px, -50px);">
+                        <a href="#" class="btn">Submit Proposal</a>
+                    </li>
+                </ul>
+                <div>
+                    <button id="close_menu" class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="slider">
+        <div id="swiper-home-desktop" class="splide splide-auto d-none d-md-block d-lg-block d-xl-block"
+            data-splide='{"type":"loop","perPage":1, "autoplay": true, "interval":4000, "focus": "center", "loop": true}'>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><a href="#" target="_blank"><img class="img-fluid"
+                                src="https://via.placeholder.com/1080x312.png"></a></li>
+                    <li class="splide__slide"><a href="#" target="_blank"><img class="img-fluid"
+                                src="https://via.placeholder.com/1080x312.png"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="swiper-mobile-desktop" class="splide splide-auto d-md-none"
+            data-splide='{"type":"loop","perPage":1, "autoplay": true, "interval":4000, "focus": "center", "loop": true}'>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><a href="#" target="_blank"><img
+                                src="https://via.placeholder.com/500x347.png"></a></li>
+                    <li class="splide__slide"><a href="#" target="_blank"><img
+                                src="https://via.placeholder.com/500x347.png"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="notice" class="shadow">
+            <a href="#">
+                <img src="/assets/img/notice.png" class="w-100" alt="">
+            </a>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <div class="col-12" id="youtube_embed" data-youtube-id="lTRiuFIWV54">
+                <iframe src="https://www.youtube.com/embed/lTRiuFIWV54" title="YouTube video player" frameborder="0"
+                    width="100%" height="100%"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Rangkaian Acara InFest Inkubasi</h2>
+
+                    <div class="splide-auto splide mt-4"
+                        data-splide='{"type":"loop","perPage":4, "autoplay": true, "interval":4000,"loop": true}'>
+                        <div class="splide__track">
+                            <ul class="splide__list">
+
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="flex">
+                                            <img src="/assets/img/menu1.png" class="img-fluid">
+                                            <p>KICK OFF</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="flex">
+                                            <img src="/assets/img/menu2.png" class="img-fluid">
+                                            <p>SELECTION</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="flex">
+                                            <img src="/assets/img/menu3.png" class="img-fluid">
+                                            <p>FINAL PITCH</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <a href="#">
+                                        <div class="flex">
+                                            <img src="/assets/img/menu4.png" class="img-fluid">
+                                            <p>AWARDING EVENT</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="overlay" style="right:-100%; opacity:0; display: none;"></div>
+</body>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+
+<!-- Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+
+<!-- Main -->
+<script src="./index.js"></script>
+
+
+</html>

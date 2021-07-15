@@ -1,0 +1,92 @@
+@import './fonts.css';
+
+
+/*---------------- COLORS ----------------*/
+.bg-yellow {
+    background: #fadd07
+}
+
+.font-yellow {
+    color: #fadd07
+}
+
+/*---------------- COLORS ----------------*/
+
+
+/*---------------- FONTS ----------------*/
+.font-bebas-bold {
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.font-gotham {
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-gotham-bold {
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.font-gotham-book {
+    font-family: 'Gotham Narrow Book';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-gotham-narrow {
+    font-family: 'Gotham Narrow';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-gotham-narrow-bold {
+    font-family: 'Gotham Narrow';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.font-gotham-narrow-black {
+    font-family: 'Gotham Narrow';
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* .font-myriad {
+    font-family: 'Myriad Pro';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-myriad-bold {
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.font-myriad-semibold {
+    font-family: 'Myriad Pro';
+    font-weight: 600;
+    font-style: normal;
+} */
+
+/*---------------- FONTS ----------------*/
+
+
+
+/* SPLIDE */
+.splide__arrows button {
+    background: none;
+}
+
+.splide__arrows button path {
+    fill: rgb(170, 0, 177);
+}
+
+.splide__arrows button svg {
+    zoom: 1.8;
+}
