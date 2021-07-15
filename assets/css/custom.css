@@ -2,15 +2,6 @@
 
 
 /*---------------- COLORS ----------------*/
-.bg-yellow {
-    background: #fadd07
-}
-
-.font-yellow {
-    color: #fadd07
-}
-
-/*---------------- COLORS ----------------*/
 
 
 /*---------------- FONTS ----------------*/
@@ -89,4 +80,12 @@
 
 .splide__arrows button svg {
     zoom: 1.8;
+}
+
+.splide.arrow_wide .splide__arrow--prev {
+    left: 0px;
+}
+
+.splide.arrow_wide .splide__arrow--next {
+    right: 0px;
 }

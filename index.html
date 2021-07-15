@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
     <!-- Splide -->
     <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css'>
@@ -82,9 +85,9 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide"><a href="#" target="_blank"><img class="img-fluid"
-                                src="https://via.placeholder.com/1080x312.png"></a></li>
+                                src="https://via.placeholder.com/1080x360.png"></a></li>
                     <li class="splide__slide"><a href="#" target="_blank"><img class="img-fluid"
-                                src="https://via.placeholder.com/1080x312.png"></a></li>
+                                src="https://via.placeholder.com/1080x360.png"></a></li>
                 </ul>
             </div>
         </div>
@@ -125,13 +128,13 @@
                 <div class="col-12">
                     <h2 class="text-center">Rangkaian Acara InFest Inkubasi</h2>
 
-                    <div class="splide-auto splide mt-4"
-                        data-splide='{"type":"loop","perPage":4, "autoplay": true, "interval":4000,"loop": true}'>
+                    <div class="splide-auto splide mt-4 arrow_wide"
+                        data-splide='{"type":"loop","perPage":4, "autoplay": true, "interval":4000,"loop": false}'>
                         <div class="splide__track">
                             <ul class="splide__list">
 
                                 <li class="splide__slide">
-                                    <a href="#">
+                                    <a href="#kickoff" data-target="kickoff">
                                         <div class="flex">
                                             <img src="/assets/img/menu1.png" class="img-fluid">
                                             <p>KICK OFF</p>
@@ -140,7 +143,7 @@
                                 </li>
 
                                 <li class="splide__slide">
-                                    <a href="#">
+                                    <a href="#selection" data-target="selection">
                                         <div class="flex">
                                             <img src="/assets/img/menu2.png" class="img-fluid">
                                             <p>SELECTION</p>
@@ -175,6 +178,75 @@
         </div>
     </section>
 
+    <section id="tab-schedule" class="py-5 px-4 px-md-0">
+        <div class="container">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="kickoff">
+                    <h2>KICKOFF</h2>
+                    <p>
+                        Rangkaian acara Kick Off InFest Inkubasi DJPPR terdiri dari Video Podcast DJPPR dan Talkshow
+                        bersama narasumber. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                        veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                        facilisi.
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+                <div class="tab-pane fade" id="selection">
+                    <h2>SELECTION</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia omnis earum excepturi quis hic!
+                        Iste
+                        praesentium accusantium hic quas id modi, odio nemo labore, accusamus minima excepturi facilis
+                        omnis
+                        eveniet?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="mentor">
+        <div class="row justify-content-md-end pt-5">
+            <div class="col-12 col-md-3 ps-5 ps-md-0">
+                <h2 class="mt-md-5">PARA<br>MENTOR</h2>
+                <ul id="mentor-list" class="mb-5">
+                    <li>
+                        <a href="#">
+                            <p class="mentor-name">Felicia Putri Tjiasaka</p>
+                            <p class="mentor-desc">Co-Founder Ternak Uang</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="mentor-name">Fellexandro Ruby</p>
+                            <p class="mentor-desc">Author & Creativepreneur</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="mentor-name">Melvin Mumpuni</p>
+                            <p class="mentor-desc">Founder Finansialku</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="mentor-name">Luky Alfirman</p>
+                            <p class="mentor-desc">Dirjen Pengelolaan Pembiayaan dan Risiko</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-8 pt-md-5">
+                <img src="/assets/img/mentor.png" class="img-fluid">
+            </div>
+        </div>
+    </section>
 
     <div id="overlay" style="right:-100%; opacity:0; display: none;"></div>
 </body>

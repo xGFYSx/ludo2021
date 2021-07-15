@@ -17,6 +17,8 @@ function main() {
     });
     resize_helper();
     window.onresize = resize_helper;
+
+    schedule_tab();
 }
 
 function toggleMenu() {
@@ -65,6 +67,68 @@ function resize_helper() {
         let yt_embed = document.querySelectorAll('#youtube_embed > iframe');
         yt_embed[0].style.height = (yt_embed[0].clientWidth * 2 / 4) + 'px';
     }
+}
+
+function schedule_tab() {
+    let schedule_links = document.querySelectorAll('#schedule a');
+    if (schedule_links.length == 0) return;
+    schedule_links.forEach(function (el, key) {
+        el.addEventListener('click', function (ev) {
+            ev.preventDefault();
+            let id_target = el.dataset.target;
+            schedule_tab_set_active(el, id_target);
+        });
+    });
+}
+
+function schedule_tab_set_active(el, id) {
+    let all_tab = document.querySelectorAll('#tab-schedule .tab-pane'),
+        target_tab = document.getElementById(id);
+    // doScrolling(`#${id}`, 200);
+
+    if (target_tab.classList.contains('active') == false) {
+        all_tab.forEach(function (el, index) {
+            el.classList.remove('active', 'show', 'fade');
+            el.classList.add('fade');
+        });
+
+        // animate
+        window.schedule_tab_action = window.schedule_tab_action || [];
+        if (window.schedule_tab_action == undefined || window.schedule_tab_set_active.hasOwnProperty(id) == false) {
+            window.schedule_tab_action[id] = new gsap.timeline()
+                .staggerFrom(target_tab.children, 1, {y: -50, opacity: 0, delay: 0}, 0.5)
+                .staggerTo(target_tab.children, 2, {y: 0, opacity: 1}, 0);
+        } else {
+            window.schedule_tab_action[id].play();
+        }
+        //scrollto
+        target_tab.classList.add('active', 'show');
+    }
+}
+
+// scroll plugins
+function doScrolling(element, duration) {
+    element = (typeof (element) == 'string') ? document.querySelectorAll(element)[0] : element;
+    let elementY = element.getBoundingClientRect().y;
+    let startingY = window.pageYOffset;
+    let diff = elementY - startingY;
+    let start;
+
+    // Bootstrap our animation - it will get called right before next frame shall be rendered.
+    window.requestAnimationFrame(function step(timestamp) {
+        if (!start) start = timestamp;
+        // Elapsed milliseconds since start of scrolling.
+        let time = timestamp - start;
+        // Get percent of completion in range [0, 1].
+        let percent = Math.min(time / duration, 1);
+
+        window.scrollTo(0, startingY + diff * percent);
+
+        // Proceed with animation as long as we wanted it to.
+        if (time < duration) {
+            window.requestAnimationFrame(step);
+        }
+    })
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
