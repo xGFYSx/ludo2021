@@ -133,7 +133,8 @@ function doScrolling(element, duration) {
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    Promise.all(Array.from(document.images).map(img => {
+    let i = document.querySelectorAll('img:not([loading="lazy"])');
+    Promise.all(Array.from(i).map(img => {
         if (img.complete)
             if (img.naturalHeight !== 0)
                 return Promise.resolve();

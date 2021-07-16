@@ -273,3 +273,19 @@ footer .links a::after {
     left: 50%;
     transform: translateX(-50%);
 }
+
+section#ticket_list .ticket {
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+section#ticket_list .ticket::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+}
