@@ -133,5 +133,21 @@ function doScrolling(element, duration) {
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    main();
+    Promise.all(Array.from(document.images).map(img => {
+        if (img.complete)
+            if (img.naturalHeight !== 0)
+                return Promise.resolve();
+            else
+                return Promise.reject(img);
+        return new Promise((resolve, reject) => {
+            img.addEventListener('load', resolve);
+            img.addEventListener('error', () => reject(img));
+        });
+    })).then(() => {
+        console.log('all images loaded successfully');
+        main();
+    }, badImg => {
+        console.log('some image failed to load, others may still be loading');
+        console.log('first broken image:', badImg);
+    });
 });
