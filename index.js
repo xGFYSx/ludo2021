@@ -71,16 +71,16 @@ function resize_helper() {
     check_page_height();
 }
 
-//check if pageHeight < window.height
 function check_page_height() {
-    let body = document.getElementsByTagName('body');
-    if (body[0].offsetHeight < window.innerHeight) {
-        console.log(window.innerHeight, window.outerHeight);
-        let footer = document.getElementsByTagName('footer');
+    let html = document.getElementsByTagName('html');
+    let footer = document.getElementsByTagName('footer');
+
+    if (html[0].offsetHeight < window.outerHeight) {
         footer[0].style.position = 'fixed';
         footer[0].style.bottom = '0px';
         footer[0].style.width = '100vw';
-        console.log(footer);
+    } else {
+        footer[0].style.position = 'block';
     }
 }
 

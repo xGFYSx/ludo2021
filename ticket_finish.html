@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Splide -->
+    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+
+    <title>LUDO</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top ">
+        <div class="relative w-100">
+            <div class="container container-fluid my-1 my-md-2">
+                <div class="w-100 d-flex flex-row justify-content-between">
+                    <div class="col-3 col-lg-2">
+                        <a href="#"><img src="./assets/img/kemenkeu.png" class="img-fluid"></a>
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <a href="index.html"><img src="./assets/img/logo.png" class="img-fluid"></a>
+                    </div>
+                    <div class="col-3 col-lg-2 d-flex justify-content-end align-content-center">
+                        <button class="btn btn-outline-dark" id="hamburger">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="menu" class="bg-dark" style="right:-100%; opacity:0">
+                <ul>
+                    <li style="opacity: 0; transform: translate(0px, -50px);">
+                        <a href="ticket.html">Ticket To The Show</a>
+                    </li>
+                    <li style="opacity: 0; transform: translate(0px, -50px);">
+                        <a href="#">Rangkaian Acara</a>
+                    </li style="opacity: 0; transform: translate(0px, -50px);">
+                    <li class="" style="opacity: 0; transform: translate(0px, -50px);">
+                        <a href="#">Para Mentor</a>
+                    </li>
+                    <li class="disable" style="opacity: 0; transform: translate(0px, -50px);">
+                        <a href="#">Para Kandidat</a>
+                    </li>
+                    <li class="disable" style="opacity: 0; transform: translate(0px, -50px);">
+                        <a href="#">Pemenang 2021</a>
+                    </li>
+                    <li id="submit_proposal" style="opacity: 0; transform: translate(0px, -50px);">
+                        <a href="#" class="btn">Submit Proposal</a>
+                    </li>
+                </ul>
+                <div>
+                    <button id="close_menu" class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="register_ticket" class="px-5 py-4">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-12 px-3">
+                    <h1 class="text-purple text-center mb-5 mt-2 fw-bold">Formulir Pendaftaran Acara <br>InFest Inkubasi
+                        DJPPR 2021
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row ">
+
+                <div class="col-12 col-md-6">
+                    <img src="./assets/img/ticket_finish.jpg" class="w-100">
+                </div>
+
+                <div class="col-12 col-md-6 py-4 py-md-0">
+                    <p class="fw-bold">Terimakasih sudah mendaftar pada acara Talkshow Road to
+                        InFest Inkubasi DJPPR 2021.<br>
+                        Link akses zoom akan dikirimkan melalui email pada H-1
+                        acara.<br>
+                        Pastikan akun zoom anda aktif dan koneksi internet anda
+                        stabil.</p>
+
+                    <div class="d-flex justify-content-end">
+                        <button type="submit"
+                            class="btn btn-primary bg-purple border-0 shadow-none rounded-pill px-4 py-2 my-4 d-flex">Selanjutnya
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.38 19.54" width="9px"
+                                class="align-self-center ms-2">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #f2f2f2;
+                                        }
+                                    </style>
+                                </defs>
+                                <title>Asset 2</title>
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1"
+                                            d="M.47.47h0a1.61,1.61,0,0,0,0,2.28L6.36,8.63a1.61,1.61,0,0,1,0,2.28L.47,16.8a1.6,1.6,0,0,0,0,2.27h0a1.61,1.61,0,0,0,2.28,0l8.16-8.16a1.61,1.61,0,0,0,0-2.28L2.75.47A1.61,1.61,0,0,0,.47.47Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="pt-4 pb-2">
+        <div class="container">
+            <div class="row justify-content-md-between">
+                <div class="col-12 col-md-3 links">
+                    <div class="d-flex justify-content-center justify-content-md-around">
+                        <a href="#" target="_blank" class="mx-4 mx-md-0">Komunitas YMYB</a>
+                        <a href="#" target="_blank" class="mx-4 mx-md-0">About DJPPR</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 social py-4 py-md-0">
+                    <div class="col-12 col-md-3">
+                        <div class="d-flex justify-content-center justify-content-md-around">
+                            <!-- instagram -->
+                            <a href="#" target="_blank" class="px-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                            <!-- twitter -->
+                            <a href="#" target="_blank" class="px-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-white text-center">Hak Cipta Direktorat Jenderal Pengelolaan Pembiayaan dan Risiko
+                        Kemenkeu RI</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="overlay" style="right:-100%; opacity:0; display: none;"></div>
+</body>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+
+<!-- Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+
+<!-- Main -->
+<script src="./index.js"></script>
+
+
+</html>
