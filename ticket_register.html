@@ -78,36 +78,66 @@
         </div>
     </nav>
 
-    <section id="ticket_list" class="px-5 py-4">
+    <section id="register_ticket" class="px-5 py-4">
         <div class="contaianer">
             <div class="row">
                 <div class="col-12 px-3">
-                    <h1 class="text-purple text-center mb-5 mt-2 fw-bold">Formulir Pendaftaran Acara<br>Infest Inkubasi
-                        DJPPR
-                        2021
+                    <h1 class="text-purple text-center mb-5 mt-2 fw-bold">Formulir Pendaftaran Acara <br>InFest Inkubasi
+                        DJPPR 2021
                     </h1>
-
-                    <a href="ticket_register.html">
-                        <div class="ticket">
-                            <img src="./assets/img/ticket.png" loading="lazy" class="w-100 d-none d-md-block">
-                            <img src="./assets/img/ticket_mobile.png" loading="lazy" class="w-100 d-block d-md-none">
+                    <p class="fw-bold text-center">Masukkan informasi personal Anda untuk melanjutkan proses pemesanan
+                        tiket.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-4">
+                    <form action="ticket_finish.html">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="nama" placeholder="John Smith" minlength="5"
+                                maxlength="50" required>
+                            <div class="valid-feedback" for="nama">
+                                Looks good!
+                            </div>
                         </div>
-                    </a>
-
-                    <a href="ticket_register.html">
-                        <div class="ticket">
-                            <img src="./assets/img/ticket.png" loading="lazy" class="w-100 d-none d-md-block">
-                            <img src="./assets/img/ticket_mobile.png" loading="lazy" class="w-100 d-block d-md-none">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="johnsmith@example.com"
+                                required>
+                            <div class="valid-feedback" for="email">
+                                Looks good!
+                            </div>
                         </div>
-                    </a>
-
-                    <a href="ticket_register.html">
-                        <div class="ticket">
-                            <img src="./assets/img/ticket.png" loading="lazy" class="w-100 d-none d-md-block">
-                            <img src="./assets/img/ticket_mobile.png" loading="lazy" class="w-100 d-block d-md-none">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">+62</span>
+                            <input type="number" class="form-control" placeholder="812345678" min="999999999"
+                                max="9999999999999" required>
                         </div>
-                    </a>
-
+                        <div class="mb-4 row ">
+                            <div class="d-flex justify-content-end ">
+                                <button type="submit"
+                                    class="btn btn-primary bg-purple border-0 shadow-none rounded-pill px-4 py-2 my-4 d-flex">Selanjutnya
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.38 19.54" width="9px"
+                                        class="align-self-center ms-2">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: #f2f2f2;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <title>Asset 2</title>
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <path class="cls-1"
+                                                    d="M.47.47h0a1.61,1.61,0,0,0,0,2.28L6.36,8.63a1.61,1.61,0,0,1,0,2.28L.47,16.8a1.6,1.6,0,0,0,0,2.27h0a1.61,1.61,0,0,0,2.28,0l8.16-8.16a1.61,1.61,0,0,0,0-2.28L2.75.47A1.61,1.61,0,0,0,.47.47Z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

@@ -1,7 +1,6 @@
 // main function
 var menuAction = false;
 function main() {
-
     //auto splide
     let splide_el = document.getElementsByClassName('splide-auto');
     window.splide_data = [];
@@ -67,6 +66,21 @@ function resize_helper() {
 
         let yt_embed = document.querySelectorAll('#youtube_embed > iframe');
         yt_embed[0].style.height = (yt_embed[0].clientWidth * 2 / 4) + 'px';
+    }
+
+    check_page_height();
+}
+
+//check if pageHeight < window.height
+function check_page_height() {
+    let body = document.getElementsByTagName('body');
+    if (body[0].offsetHeight < window.innerHeight) {
+        console.log(window.innerHeight, window.outerHeight);
+        let footer = document.getElementsByTagName('footer');
+        footer[0].style.position = 'fixed';
+        footer[0].style.bottom = '0px';
+        footer[0].style.width = '100vw';
+        console.log(footer);
     }
 }
 
@@ -150,5 +164,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }, badImg => {
         console.log('some image failed to load, others may still be loading');
         console.log('first broken image:', badImg);
+        main();
     });
 });
