@@ -57,7 +57,8 @@ function resize_helper() {
     let slider = document.getElementById('slider');
     if (slider != undefined) {
         let notice = document.getElementById('notice');
-        let height = -1 * Math.round(notice.offsetHeight * 3 / 4);
+        let height = (window.innerWidth > 991) ? Math.round(notice.offsetHeight * 3 / 4) : Math.round(notice.offsetHeight * 7 / 8);
+        height = -1 * height;
         notice.style.bottom = height + 'px';
 
         //margin before youtube embed
