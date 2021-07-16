@@ -152,7 +152,7 @@ nav img {
 
 /* section main */
 section#main {
-    background: rgb(170, 0, 177);
+    background: #64066a;
     background: radial-gradient(circle, rgba(170, 0, 177, 1) 35%, rgba(92, 0, 94, 1) 100%);
     position: relative;
     min-height: 300px;
@@ -178,14 +178,14 @@ section#schedule {
 }
 
 #schedule .splide-auto a p {
-    color: rgb(170, 0, 177);
+    color: #64066a;
     font-weight: 600;
     text-align: center;
     margin-bottom: 0px;
 }
 
 #schedule h2 {
-    color: rgb(170, 0, 177);
+    color: #64066a;
     font-weight: bold;
 }
 
@@ -194,7 +194,7 @@ section#schedule {
 }
 
 #tab-schedule h2 {
-    color: rgb(170, 0, 177);
+    color: #64066a;
     margin-bottom: 1.5rem !important;
     font-weight: 600;
 }
@@ -226,4 +226,50 @@ section#schedule {
 
 #mentor #mentor-list li::marker {
     color: #70e6c3;
+}
+
+
+/* SECTION KEUNTUNGAN */
+
+#keuntungan {
+    background: #70e6c3;
+}
+
+#keuntungan h2 {
+    color: #64066a;
+    font-weight: 600;
+}
+
+#keuntungan h4 {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}
+
+footer {
+    color: #fff;
+    background: #000;
+}
+
+footer .social path {
+    fill: #fff;
+}
+
+footer .links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    position: relative;
+}
+
+footer .links a::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 80%;
+    background-color: #70e6c3;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
 }
