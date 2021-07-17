@@ -146,14 +146,19 @@ function doScrolling(element, duration) {
     })
 }
 
+resize_helper();
 window.addEventListener('DOMContentLoaded', (event) => {
     let i = document.querySelectorAll('img:not([loading="lazy"])');
     Promise.all(Array.from(i).map(img => {
         if (img.complete)
-            if (img.naturalHeight !== 0)
+            if (img.naturalHeight !== 0) {
+                resize_helper();
                 return Promise.resolve();
-            else
+            }
+            else {
+                resize_helper();
                 return Promise.reject(img);
+            }
         return new Promise((resolve, reject) => {
             img.addEventListener('load', resolve);
             img.addEventListener('error', () => reject(img));

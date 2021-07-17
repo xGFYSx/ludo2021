@@ -100,3 +100,11 @@
 .splide.arrow_wide .splide__arrow--next {
     right: 0px;
 }
+
+.splide__pagination__page {
+    background: #ccc;
+}
+
+.splide__pagination__page.is-active {
+    background: rgb(170, 0, 177) !important;
+}

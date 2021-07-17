@@ -199,6 +199,10 @@ section#schedule {
     font-weight: 600;
 }
 
+#schedule .splide__pagination {
+    bottom: -20px;
+}
+
 /* SECTION MENTOR */
 #mentor {
     background: #1c1c1c;
