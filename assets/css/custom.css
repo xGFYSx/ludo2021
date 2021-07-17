@@ -81,8 +81,12 @@
     background: none;
 }
 
-.splide__arrows button path {
+.splide__arrows button:not(:disabled) path {
     fill: rgb(170, 0, 177);
+}
+
+.splide__arrows button:disabled path {
+    fill: rgba(171, 0, 177, 0.3);
 }
 
 .splide__arrows button svg {

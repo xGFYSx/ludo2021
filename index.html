@@ -85,9 +85,9 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide"><a href="#" target="_blank"><img class="img-fluid"
-                                src="./assets/img/banner1.png"></a></li>
+                                src="./assets/img/banner1.png" loading="lazy"></a></li>
                     <li class="splide__slide"><a href="#" target="_blank"><img class="img-fluid"
-                                src="https://via.placeholder.com/1080x360.png"></a></li>
+                                src="https://via.placeholder.com/1080x360.png" loading="lazy"></a></li>
                 </ul>
             </div>
         </div>
@@ -96,10 +96,11 @@
             data-splide='{"type":"loop","perPage":1, "autoplay": true, "interval":4000, "focus": "center", "loop": true}'>
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><a href="#" target="_blank"><img src="assets/img/mobile_banner.png"></a>
+                    <li class="splide__slide"><a href="#" target="_blank"><img src="assets/img/mobile_banner.png"
+                                loading="lazy"></a>
                     </li>
                     <li class="splide__slide"><a href="#" target="_blank"><img
-                                src="https://via.placeholder.com/500x832.png"></a></li>
+                                src="https://via.placeholder.com/500x832.png" loading="lazy"></a></li>
                 </ul>
             </div>
         </div>
@@ -132,46 +133,59 @@
                     <h2 class="text-center">Rangkaian Acara InFest Inkubasi</h2>
 
                     <div class="splide-auto splide mt-4 arrow_wide"
-                        data-splide='{"type":"loop","perPage":4, "autoplay": true, "interval":4000,"loop": false}'>
+                        data-splide='{"type":"slide","perPage":4, "autoplay": false, "interval":4000,"loop": false}'>
                         <div class="splide__track">
                             <ul class="splide__list">
 
                                 <li class="splide__slide">
-                                    <a href="#kickoff" data-target="kickoff">
+                                    <a href="#submission" data-target="submission">
                                         <div class="flex">
-                                            <img src="./assets/img/menu1.png" class="img-fluid">
-                                            <p>KICK OFF</p>
+                                            <img src="./assets/img/icon_menu_1-min.png" class="img-fluid"
+                                                loading="lazy">
+                                            <p>SUBMISSION</p>
                                         </div>
                                     </a>
                                 </li>
 
                                 <li class="splide__slide">
-                                    <a href="#selection" data-target="selection">
+                                    <a href="#incubation" data-target="incubation">
                                         <div class="flex">
-                                            <img src="./assets/img/menu2.png" class="img-fluid">
-                                            <p>SELECTION</p>
+                                            <img src="./assets/img/icon_menu_2-min.png" class="img-fluid"
+                                                loading="lazy">
+                                            <p>INCUBATION</p>
                                         </div>
                                     </a>
                                 </li>
 
                                 <li class="splide__slide">
-                                    <a href="#">
+                                    <a href="#live_pitching" data-target="live_pitching">
                                         <div class="flex">
-                                            <img src="./assets/img/menu3.png" class="img-fluid">
-                                            <p>FINAL PITCH</p>
+                                            <img src="./assets/img/icon_menu_3-min.png" class="img-fluid"
+                                                loading="lazy">
+                                            <p>LIVE PITCHING</p>
                                         </div>
                                     </a>
                                 </li>
 
                                 <li class="splide__slide">
-                                    <a href="#">
+                                    <a href="#winner_diary" data-target="winner_diary">
                                         <div class="flex">
-                                            <img src="./assets/img/menu4.png" class="img-fluid">
-                                            <p>AWARDING EVENT</p>
+                                            <img src="./assets/img/icon_menu_4-min.png" class="img-fluid"
+                                                loading="lazy">
+                                            <p>WINNER DIARY</p>
                                         </div>
                                     </a>
                                 </li>
 
+                                <li class="splide__slide">
+                                    <a href="#awarding_night" data-target="awarding_night">
+                                        <div class="flex">
+                                            <img src="./assets/img/icon_menu_5-min.png" class="img-fluid"
+                                                loading="lazy">
+                                            <p>AWARDING NIGHT</p>
+                                        </div>
+                                    </a>
+                                </li>
 
                             </ul>
                         </div>
@@ -184,8 +198,8 @@
     <section id="tab-schedule" class="py-5 px-4 px-md-0">
         <div class="container">
             <div class="tab-content">
-                <div class="tab-pane fade show active" id="kickoff">
-                    <h2 class="text-center text-md-start">KICKOFF</h2>
+                <div class="tab-pane fade show active" id="submission">
+                    <h2 class="text-center text-md-start">SUBMISSION</h2>
                     <p>
                         Rangkaian acara Kick Off InFest Inkubasi DJPPR terdiri dari Video Podcast DJPPR dan Talkshow
                         bersama narasumber. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
@@ -199,16 +213,71 @@
                         tincidunt ut laoreet dolore magna aliquam erat volutpat.
                     </p>
                 </div>
-                <div class="tab-pane fade" id="selection">
-                    <h2 class="text-center text-md-start">SELECTION</h2>
+
+                <div class="tab-pane fade" id="incubation">
+                    <h2 class="text-center text-md-start">INCUBATION</h2>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia omnis earum excepturi quis hic!
-                        Iste
-                        praesentium accusantium hic quas id modi, odio nemo labore, accusamus minima excepturi facilis
-                        omnis
-                        eveniet?
+                        Rangkaian acara Kick Off InFest Inkubasi DJPPR terdiri dari Video Podcast DJPPR dan Talkshow
+                        bersama narasumber. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                        veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                        facilisi.
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat.
                     </p>
                 </div>
+
+                <div class="tab-pane fade" id="live_pitching">
+                    <h2 class="text-center text-md-start">LIVE PITCHING</h2>
+                    <p>
+                        Rangkaian acara Kick Off InFest Inkubasi DJPPR terdiri dari Video Podcast DJPPR dan Talkshow
+                        bersama narasumber. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                        veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                        facilisi.
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+
+                <div class="tab-pane fade" id="winner_diary">
+                    <h2 class="text-center text-md-start">WINNER DIARY</h2>
+                    <p>
+                        Rangkaian acara Kick Off InFest Inkubasi DJPPR terdiri dari Video Podcast DJPPR dan Talkshow
+                        bersama narasumber. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                        veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                        facilisi.
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+
+                <div class="tab-pane fade" id="awarding_night">
+                    <h2 class="text-center text-md-start">AWARDING NIGHT</h2>
+                    <p>
+                        Rangkaian acara Kick Off InFest Inkubasi DJPPR terdiri dari Video Podcast DJPPR dan Talkshow
+                        bersama narasumber. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                        veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                        consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                        dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                        facilisi.
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -246,7 +315,7 @@
                 </ul>
             </div>
             <div class="col-12 col-md-8 pt-md-5">
-                <img src="./assets/img/mentor.png" class="img-fluid">
+                <img src="./assets/img/mentor.png" class="img-fluid" loading="lazy">
             </div>
         </div>
     </section>
@@ -265,25 +334,25 @@
                 <div class="col-6 col-md-3">
                     <div class="px-4">
                         <h4 class="text-center">MENTORSHIP<br>PROGRAM</h4>
-                        <img src="./assets/img/program1.png" class="w-100">
+                        <img src="./assets/img/program1.png" class="w-100" loading="lazy">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="px-4">
                         <h4 class="text-center">PENDANAAN<br>PROGRAM</h4>
-                        <img src="./assets/img/program2.png" class="w-100">
+                        <img src="./assets/img/program2.png" class="w-100" loading="lazy">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="px-4">
                         <h4 class="text-center">PENGHARGAAN DARI<br>KEMENKEU RI</h4>
-                        <img src="./assets/img/program3.png" class="w-100">
+                        <img src="./assets/img/program3.png" class="w-100" loading="lazy">
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="px-4">
                         <h4 class="text-center">KOLABORASI<br>PROGRAM</h4>
-                        <img src="./assets/img/program4.png" class="w-100">
+                        <img src="./assets/img/program4.png" class="w-100" loading="lazy">
                     </div>
                 </div>
 
