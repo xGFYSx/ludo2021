@@ -18,6 +18,7 @@ function main() {
     window.onresize = resize_helper;
 
     schedule_tab();
+    active_step();
 }
 
 function toggleMenu() {
@@ -144,6 +145,17 @@ function doScrolling(element, duration) {
             window.requestAnimationFrame(step);
         }
     })
+}
+
+// submission step
+function active_step() {
+    let step = document.getElementById('step');
+    if (step == undefined) return;
+
+    let active = document.querySelectorAll('#step .active')[0];
+    let x = active.getClientRects()[0].x;
+    console.log(x, active.parentElement.clientWidth, (x - (active.parentElement.clientWidth / 2)));
+    step.scrollLeft = x - (active.parentElement.clientWidth / 2)
 }
 
 resize_helper();

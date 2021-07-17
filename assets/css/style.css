@@ -293,3 +293,31 @@ section#ticket_list .ticket::after {
     width: 100%;
     background-color: #000;
 }
+
+
+/* SECTION SUBMISSION */
+#step {
+    position: relative;
+    border-bottom: 2px solid #70e6c3
+}
+
+#step h3 {
+    color: #000;
+    font-weight: bold;
+    ;
+}
+
+#step .active h3::after {
+    content: '';
+    height: 6px;
+    width: 70%;
+    margin: 0px auto -40px auto;
+    background: #64066a;
+    display: block;
+}
+
+#step a {
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+}

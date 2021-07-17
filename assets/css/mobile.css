@@ -23,4 +23,33 @@
     #keuntungan h4 {
         font-size: 10px;
     }
+
+    #step {
+        overflow-x: scroll !important;
+    }
+
+    #step a {
+        text-align: left;
+    }
+
+    #step .active h3::after {
+        margin: 0px !important;
+        position: absolute;
+        left: 0px;
+        bottom: -38px;
+        width: 180px;
+        position: absolute;
+    }
+
+    #step-container {
+        overflow: hidden;
+        position: relative;
+    }
+
+    #step h3 {
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+    }
+
+
 }
